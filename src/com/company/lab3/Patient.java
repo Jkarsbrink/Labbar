@@ -1,35 +1,37 @@
 package com.company.lab3;
 
-public class Patient {
 
+public class Patient {
     private String name;
     private String sickness;
-    private boolean isSick;
 
     Patient(String name, String sickness) {
-        getName();
-        isSick = true;
-
+        this.name = name;
+        this.sickness = sickness;
     }
+
     Patient(String name) {
-        getName();
+        this.name = name;
+    }
 
+    public String getName() {
+        return name;
     }
-    public String getName(Patient) {
-    return name;
-    }
-    public String getSickness(String sickness){
+
+    public String getSickness() {
         return sickness;
     }
 
-    public boolean isSick(Patient){
-        return isSick;
+    public boolean isSick() {
+        return this.sickness != null;
+    }
+
+    public void takeMedication(Medicine medicine) {
+        if (medicine.getTreatmentName().equals(this.sickness)) {
+            this.sickness = null;
         }
 
 
-
-
-    //issick getname getsickness takemedicin medlemsmetod
-
     }
+
 }
