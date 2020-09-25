@@ -31,7 +31,6 @@ public class Patient {
             this.sickness = null;
         }
 
-
     }
 
 }
