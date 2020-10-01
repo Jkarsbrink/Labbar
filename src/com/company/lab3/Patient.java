@@ -14,19 +14,19 @@ public class Patient {
         this.name = name;
     }
 
-    public String getName() {
-        return name;
+    protected String getName() {
+        return this.name;
     }
 
-    public String getSickness() {
-        return sickness;
+    protected String getSickness() {
+        return this.sickness;
     }
 
-    public boolean isSick() {
+    protected boolean isSick() {
         return this.sickness != null;
     }
 
-    public void takeMedication(Medicine medicine) {
+    protected void takeMedication(Medicine medicine) {
         if (medicine.getTreatmentName().equals(this.sickness)) {
             this.sickness = null;
         }
