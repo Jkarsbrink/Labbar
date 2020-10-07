@@ -44,11 +44,11 @@
       <recent name="com.company" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\GitHub\GitHubLabbar" />
       <recent name="C:\GitHub\GitHubLabbar\src\com\company" />
+      <recent name="C:\GitHub\GitHubLabbar" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TollFeeCalculatorTest.readScanner">
+  <component name="RunManager" selected="JUnit.TollFeeCalculatorTest.DoesStringHaveSpace">
     <configuration name="TollFeeCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.lab4.TollFeeCalculator" />
       <module name="GitHubLabbar" />
@@ -62,18 +62,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TollFeeCalculatorTest.TestTollFeeCalculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TollFeeCalculatorTest.DoesStringHaveSpace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GitHubLabbar" />
       <extension name="coverage">
         <pattern>
@@ -83,13 +85,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.company.lab4" />
       <option name="MAIN_CLASS_NAME" value="com.company.lab4.TollFeeCalculatorTest" />
-      <option name="METHOD_NAME" value="TestTollFeeCalculator" />
+      <option name="METHOD_NAME" value="DoesStringHaveSpace" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TollFeeCalculatorTest.isEveryValueUsed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TollFeeCalculatorTest.isAllDatesUsed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GitHubLabbar" />
       <extension name="coverage">
         <pattern>
@@ -99,13 +101,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.company.lab4" />
       <option name="MAIN_CLASS_NAME" value="com.company.lab4.TollFeeCalculatorTest" />
-      <option name="METHOD_NAME" value="isEveryValueUsed" />
+      <option name="METHOD_NAME" value="isAllDatesUsed" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TollFeeCalculatorTest.isItAFreeDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TollFeeCalculatorTest.passingUnderSameHour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GitHubLabbar" />
       <extension name="coverage">
         <pattern>
@@ -115,7 +117,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.company.lab4" />
       <option name="MAIN_CLASS_NAME" value="com.company.lab4.TollFeeCalculatorTest" />
-      <option name="METHOD_NAME" value="isItAFreeDate" />
+      <option name="METHOD_NAME" value="passingUnderSameHour" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,18 +141,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.TollFeeCalculator" />
-      <item itemvalue="JUnit.TollFeeCalculatorTest.isItAFreeDate" />
-      <item itemvalue="JUnit.TollFeeCalculatorTest.isEveryValueUsed" />
-      <item itemvalue="JUnit.TollFeeCalculatorTest.TestTollFeeCalculator" />
+      <item itemvalue="JUnit.TollFeeCalculatorTest.passingUnderSameHour" />
       <item itemvalue="JUnit.TollFeeCalculatorTest.readScanner" />
+      <item itemvalue="JUnit.TollFeeCalculatorTest.isAllDatesUsed" />
+      <item itemvalue="JUnit.TollFeeCalculatorTest.DoesStringHaveSpace" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TollFeeCalculatorTest.DoesStringHaveSpace" />
+        <item itemvalue="JUnit.TollFeeCalculatorTest.isAllDatesUsed" />
         <item itemvalue="JUnit.TollFeeCalculatorTest.readScanner" />
+        <item itemvalue="JUnit.TollFeeCalculatorTest.passingUnderSameHour" />
         <item itemvalue="Application.TollFeeCalculator" />
-        <item itemvalue="JUnit.TollFeeCalculatorTest.TestTollFeeCalculator" />
-        <item itemvalue="JUnit.TollFeeCalculatorTest.isEveryValueUsed" />
-        <item itemvalue="JUnit.TollFeeCalculatorTest.isItAFreeDate" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +171,8 @@
       <workItem from="1601552600699" duration="811000" />
       <workItem from="1601620972103" duration="7897000" />
       <workItem from="1601885536380" duration="16466000" />
-      <workItem from="1601968990391" duration="5112000" />
+      <workItem from="1601968990391" duration="5440000" />
+      <workItem from="1602051517789" duration="6388000" />
     </task>
     <servers />
   </component>
@@ -185,29 +188,29 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="524" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1601970081215" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1601971251892">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1602052087716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601971251892" />
-    <state width="1493" height="138" key="GridCell.Tab.0.bottom" timestamp="1602008034414">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602052087716" />
+    <state width="1493" height="146" key="GridCell.Tab.0.bottom" timestamp="1602063528356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="138" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602008034414" />
+    <state width="1493" height="146" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602063528356" />
     <state width="1340" height="138" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600960742073" />
-    <state width="1493" height="138" key="GridCell.Tab.0.center" timestamp="1602008034414">
+    <state width="1493" height="146" key="GridCell.Tab.0.center" timestamp="1602063528356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="138" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602008034414" />
+    <state width="1493" height="146" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602063528356" />
     <state width="1340" height="138" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600960742073" />
-    <state width="1493" height="138" key="GridCell.Tab.0.left" timestamp="1602008034414">
+    <state width="1493" height="146" key="GridCell.Tab.0.left" timestamp="1602063528356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="138" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602008034414" />
+    <state width="1493" height="146" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602063528356" />
     <state width="1340" height="138" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600960742073" />
-    <state width="1493" height="138" key="GridCell.Tab.0.right" timestamp="1602008034414">
+    <state width="1493" height="146" key="GridCell.Tab.0.right" timestamp="1602063528356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="138" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602008034414" />
+    <state width="1493" height="146" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602063528356" />
     <state width="1340" height="138" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600960742073" />
     <state width="1493" height="233" key="GridCell.Tab.1.bottom" timestamp="1601904641481">
       <screen x="0" y="0" width="1536" height="824" />
@@ -233,6 +236,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="520" y="492" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1601886853897" />
+    <state x="209" y="33" key="new project wizard" timestamp="1602052057353">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1602052057353" />
     <state x="660" y="277" key="refactoring.ChangeSignatureDialog" timestamp="1600957649457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

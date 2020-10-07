@@ -73,13 +73,23 @@ public class TollFeeCalculatorTest {
 
     }
     @Test
+    @DisplayName("Testing if the full Date String is used")
+    void isAllDatesUsed(){
+    String dates = "2020-06-30 08:24, 2020-06-30 08:30";
+    String[] splitedDates = TollFeeCalculator.splitData(dates);
+    LocalDateTime[] twoDates = TollFeeCalculator.createDatesFromDateStrings(splitedDates);
+    assertEquals(splitedDates.length, twoDates.length);
+}
+
+    @Test
     @DisplayName("felsök för betalning")
     void passingUnderSameHour(){
-        LocalDateTime date = LocalDateTime.parse("2020-06-30 06:10",
-        DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
-        LocalDateTime date1 = LocalDateTime.parse("2020-06-30 06:10",
+        LocalDateTime[] dates = new LocalDateTime[2];
+        dates[0] = LocalDateTime.parse("2020-06-30 08:24",
                 DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
-
+        dates[1] = LocalDateTime.parse("2020-06-30 08:30",
+                DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
+        assertEquals(TollFeeCalculator.getTotalFeeCost(dates), 13);
 
     }
     @Test
@@ -90,6 +100,7 @@ public class TollFeeCalculatorTest {
     void TollFeeCalculator(String inputfile){
         assertEquals("Cought a StringIndexOutOfBounds", inputfile);
     }
+
     @Test
     @DisplayName("Test if scanner reads all data")
     void readScanner(){
@@ -102,13 +113,19 @@ public class TollFeeCalculatorTest {
     }
 
     @Test
-    void RightLength() {
+    void RightLengthOnDate() {
         String[] arr = new String[9];
         if (arr.length != 8) {
             throw new IllegalStateException("Array length is not expected");
-            String LocalDateTime = "yyyy-MM-dd HH:mm";
-            assertEquals(9, LocalDateTime.length());
+                String LocalDateTime = "yyyy-MM-dd HH:mm";
+                assertEquals(9, LocalDateTime.length());
         }
     }
+    @Test
+    @DisplayName("Testing if string has space ")
+    void DoesStringHaveSpace(){
+        String ifItHasSpace = "Den totala kostnaden är: ";
+        assertNotEquals("Den totala kostnaden är:", ifItHasSpace);
 
+    }
 }

@@ -8,12 +8,17 @@ import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
 public class TollFeeCalculator {
-
-    public  TollFeeCalculator(String inputFile) {
+    public static String[] splitData(String data){
+        return data.split(", ");
+    }
+    public static LocalDateTime[] createDatesFromDateStrings(String[] dates){
+        return new LocalDateTime[dates.length];
+    }
+    public TollFeeCalculator(String inputFile) {
         try {
             Scanner sc = new Scanner(new File(inputFile));
-            String[] dateStrings = sc.nextLine().split(", ");
-            LocalDateTime[] dates = new LocalDateTime[dateStrings.length];
+            String[] dateStrings = splitData(sc.nextLine());
+            LocalDateTime[] dates = createDatesFromDateStrings(dateStrings);
             for (int i = 0; i < dates.length; i++) {
                 dates[i] = LocalDateTime.parse(dateStrings[i], DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
             }
