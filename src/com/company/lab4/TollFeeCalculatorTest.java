@@ -117,8 +117,8 @@ public class TollFeeCalculatorTest {
         String[] arr = new String[9];
         if (arr.length != 8) {
             throw new IllegalStateException("Array length is not expected");
-                String LocalDateTime = "yyyy-MM-dd HH:mm";
-                assertEquals(9, LocalDateTime.length());
+             //   String LocalDateTime = "yyyy-MM-dd HH:mm";
+              //  assertEquals(9, LocalDateTime.length());
         }
     }
     @Test
