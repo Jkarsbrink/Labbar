@@ -9,7 +9,6 @@ public class YatziTest {
     @Test
     @DisplayName("Testing if it is Yatzi")
     void isYatziWhenAllDiceMatches() {
-        YatziMain testYaztziMain = new YatziMain();
         Die[] dice = new Die[5];
         dice[0] = new Die();
         dice[1] = new Die();
@@ -19,13 +18,12 @@ public class YatziTest {
         for(Die die: dice) {
             die.value = 6;
         }
-        assertTrue(testYaztziMain.yatzi(dice));
+        assertTrue(YatziMain.yatzi(dice));
     }
 
     @Test
     @DisplayName("Testing if it is NOT Yatzi")
     void isNotYatziWhenOneDieIsNotMatchingTheOther() {
-        YatziMain testYatziMain = new YatziMain();
         Die[] dice = new Die[5];
         dice[0] = new Die();
         dice[1] = new Die();
@@ -36,6 +34,6 @@ public class YatziTest {
             die.value = 6;
         }
         dice[4].value = 1;
-        assertFalse(testYatziMain.yatzi(dice));
+        assertFalse(YatziMain.yatzi(dice));
     }
 }

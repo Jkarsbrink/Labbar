@@ -13,7 +13,7 @@ public class YatziMain {
         whenPlaying();
     }
 
-    protected boolean yatzi(Die[] die) {
+    protected static boolean yatzi(Die[] die) {
         for (int j = 1; j < 5; j++) {
             if (die[j].value != die[j - 1].value) {
                 return false;
