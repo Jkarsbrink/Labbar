@@ -12,21 +12,28 @@ public class TollFeeCalculator {
         return data.split(", ");
     }
     public static LocalDateTime[] createDatesFromDateStrings(String[] dates){
-        return new LocalDateTime[dates.length];
+        LocalDateTime[] dateTimeArray = new LocalDateTime[dates.length];
+        for (int i = 0; i < dates.length; i++) {
+            dateTimeArray[i] = LocalDateTime.parse(dates[i], DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
+        }
+        return dateTimeArray; // längd -1 och createDatesFromDateString hade bara längden inte någon sparad data
+
     }
     public TollFeeCalculator(String inputFile) {
+        Scanner sc = null;
         try {
-            Scanner sc = new Scanner(new File(inputFile));
+            sc = new Scanner(new File(inputFile));
             String[] dateStrings = splitData(sc.nextLine());
             LocalDateTime[] dates = createDatesFromDateStrings(dateStrings);
-            for (int i = 0; i < dates.length; i++) {
-                dates[i] = LocalDateTime.parse(dateStrings[i], DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
-            }
-            System.out.println("Den totala kostnaden är: " + getTotalFeeCost(dates));
+            System.out.println("Den totala kostnaden är: " + getTotalFeeCost(dates)); // saknade mellanrum
         } catch (IOException e) {
             System.err.println("Kunde inte läsa filen " + inputFile);
         } catch (StringIndexOutOfBoundsException e) {
-            System.err.println(e.getMessage());
+            System.err.println("String index out of bonds ");
+        }finally {
+            if (sc != null) {
+                sc.close(); // Skannern stängdes inte
+            }
         }
     }
 
@@ -38,7 +45,7 @@ public class TollFeeCalculator {
         boolean isNewDay;
         LocalDateTime intervalStart = dates[0];
 
-        for (LocalDateTime date : dates) {
+        for (LocalDateTime date : dates) { // Har testat om man åker under samma timme
             long diffInMinutes = intervalStart.until(date, ChronoUnit.MINUTES);
             isNewDay = intervalStart.getDayOfYear() != date.getDayOfYear();
             System.out.println(date.toString());
@@ -68,12 +75,12 @@ public class TollFeeCalculator {
                     System.out.println("Kostnaden för denna tid kommer ersätta förra tiden");
                     lastValue = getTollFeePerPassing(date);
                 } else {
-                    System.out.println("du har redan betalt för denna timme");
+                    System.out.println("Du har redan betalt för denna timme");
                 }
             }
             System.out.println(" ");
         }
-        totalFee += Math.min(60, totalDayFee);
+        totalFee += Math.min(60, totalDayFee);// Kan inte ha max utan ska ha min.
         return totalFee;
     }
     public static int getTollFeePerPassing(LocalDateTime date) {
@@ -84,19 +91,20 @@ public class TollFeeCalculator {
         else if (hour == 6 ) return 13;
         else if (hour == 7 ) return 18;
         else if (hour == 8 && minute <= 29) return 13;
-        else if (hour == 8 ||  hour >= 9 && hour < 15 && minute <= 30 ) return 8;
+        else if (hour >= 8 && hour < 15) return 8;
         else if (hour == 15 && minute <= 29) return 13;
-        else if (hour == 15 ||  hour == 16 && minute <=59 ) return 18;
+        else if (hour == 15 || hour == 16) return 18;
         else if (hour == 17 ) return 13;
         else if (hour == 18 && minute <= 29) return 8;
         else return 0;
+        //tog inte upp alla betaltider och räknar fel vid vissa tillfällen, även testar 14:59 och alla bytes värden exempel 07:59 och 08:00
     }
 
     public static boolean isTollFreeDate(LocalDateTime date) {
         return date.getDayOfWeek().getValue() == 6 || date.getDayOfWeek().getValue() == 7 || date.getMonth().getValue() == 7;
-    }
+    }// har testa om juli e gratis
 
     public static void main(String[] args) {
-        new TollFeeCalculator("testData/Lab4.txt");
+        new TollFeeCalculator("testData/Lab4.1.txt");
     }
 }
