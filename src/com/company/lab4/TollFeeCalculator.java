@@ -105,6 +105,6 @@ public class TollFeeCalculator {
     }// har testa om juli e gratis
 
     public static void main(String[] args) {
-        new TollFeeCalculator("testData/Lab4.1.txt");
+        new TollFeeCalculator("testData/Lab4.txt");
     }
 }
