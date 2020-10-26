@@ -118,7 +118,7 @@ public class TollFeeCalculatorTest {
     void readMessageFromSystemErr(){
         ByteArrayOutputStream errContent = new ByteArrayOutputStream();
         System.setErr(new PrintStream(errContent));
-        TollFeeCalculator inputnull = new TollFeeCalculator("");
+        TollFeeCalculator inputEmpty = new TollFeeCalculator("");
         String expectedErrContent = "Kunde inte läsa filen";
         assertEquals(expectedErrContent, errContent.toString().trim());
     }
