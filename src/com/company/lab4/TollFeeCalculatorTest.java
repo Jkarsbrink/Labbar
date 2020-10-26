@@ -113,10 +113,21 @@ public class TollFeeCalculatorTest {
         assertNotEquals("Den totala kostnaden är:", ifItHasSpace);
     }
 
-    @Test@DisplayName("Testing byte array")
+    @Test
+    @DisplayName("Testing Error message")
     void readMessageFromSystemErr(){
         ByteArrayOutputStream errContent = new ByteArrayOutputStream();
         System.setErr(new PrintStream(errContent));
-        assertNotEquals("Utskrift skickat till System.err", errContent.toString().trim());
+        TollFeeCalculator inputnull = new TollFeeCalculator("");
+        String expectedErrContent = "Kunde inte läsa filen";
+        assertEquals(expectedErrContent, errContent.toString().trim());
+    }
+    @Test
+    @DisplayName("Testing if input data is from correct testData")
+    void readMessageFromSystemEr(){
+        TollFeeCalculator input1 = new TollFeeCalculator("testData/Lab4.txt");
+        TollFeeCalculator input2 = new TollFeeCalculator("testdata/Lab4.1.txt");
+        assertNotEquals("input2", "input1");
+
     }
 }
