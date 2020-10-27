@@ -29,7 +29,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/company" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -39,25 +39,26 @@
     <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitHub\GitHubLabbar\src\com\company" />
       <recent name="C:\GitHub\GitHubLabbar\testData" />
+      <recent name="C:\GitHub\GitHubLabbar" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.company.lab4" />
       <recent name="com.company" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\GitHub\GitHubLabbar\src\com\company" />
-      <recent name="C:\GitHub\GitHubLabbar" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitHub\GitHubLabbar\testData" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TollFeeCalculatorTest.readMessageFromSystemErr">
-    <configuration name="TollFeeCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.lab4.TollFeeCalculator" />
+  <component name="RunManager" selected="Application.Hangman">
+    <configuration name="Hangman" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.lab6.Hangman" />
       <module name="GitHubLabbar" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.lab4.*" />
+          <option name="PATTERN" value="com.company.lab6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,97 +66,95 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TollFeeCalculatorTest.isAllDatesUsed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HangmanTest.DoProgramComplyWithDigits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GitHubLabbar" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.lab4.*" />
+          <option name="PATTERN" value="com.company.lab6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.lab4" />
-      <option name="MAIN_CLASS_NAME" value="com.company.lab4.TollFeeCalculatorTest" />
-      <option name="METHOD_NAME" value="isAllDatesUsed" />
+      <option name="PACKAGE_NAME" value="com.company.lab6" />
+      <option name="MAIN_CLASS_NAME" value="com.company.lab6.HangmanTest" />
+      <option name="METHOD_NAME" value="DoProgramComplyWithDigits" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TollFeeCalculatorTest.passingUnderSameHour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HangmanTest.exceptionTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GitHubLabbar" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.lab4.*" />
+          <option name="PATTERN" value="com.company.lab6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.lab4" />
-      <option name="MAIN_CLASS_NAME" value="com.company.lab4.TollFeeCalculatorTest" />
-      <option name="METHOD_NAME" value="passingUnderSameHour" />
+      <option name="PACKAGE_NAME" value="com.company.lab6" />
+      <option name="MAIN_CLASS_NAME" value="com.company.lab6.HangmanTest" />
+      <option name="METHOD_NAME" value="exceptionTesting" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TollFeeCalculatorTest.readMessageFromSystemErr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HangmanTest.nullPointerExceptionTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GitHubLabbar" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.lab4.*" />
+          <option name="PATTERN" value="com.company.lab6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.lab4" />
-      <option name="MAIN_CLASS_NAME" value="com.company.lab4.TollFeeCalculatorTest" />
+      <option name="PACKAGE_NAME" value="com.company.lab6" />
+      <option name="MAIN_CLASS_NAME" value="com.company.lab6.HangmanTest" />
+      <option name="METHOD_NAME" value="nullPointerExceptionTesting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HangmanTest.readMessageFromSystemErr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GitHubLabbar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.lab6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.lab6" />
+      <option name="MAIN_CLASS_NAME" value="com.company.lab6.HangmanTest" />
       <option name="METHOD_NAME" value="readMessageFromSystemErr" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TollFeeCalculatorTest.tollFeePrePassing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GitHubLabbar" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.lab4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.lab4" />
-      <option name="MAIN_CLASS_NAME" value="com.company.lab4.TollFeeCalculatorTest" />
-      <option name="METHOD_NAME" value="tollFeePrePassing" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.TollFeeCalculator" />
-      <item itemvalue="JUnit.TollFeeCalculatorTest.passingUnderSameHour" />
-      <item itemvalue="JUnit.TollFeeCalculatorTest.tollFeePrePassing" />
-      <item itemvalue="JUnit.TollFeeCalculatorTest.readMessageFromSystemErr" />
-      <item itemvalue="JUnit.TollFeeCalculatorTest.isAllDatesUsed" />
+      <item itemvalue="JUnit.HangmanTest.readMessageFromSystemErr" />
+      <item itemvalue="JUnit.HangmanTest.DoProgramComplyWithDigits" />
+      <item itemvalue="JUnit.HangmanTest.exceptionTesting" />
+      <item itemvalue="JUnit.HangmanTest.nullPointerExceptionTesting" />
+      <item itemvalue="Application.Hangman" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TollFeeCalculatorTest.readMessageFromSystemErr" />
-        <item itemvalue="JUnit.TollFeeCalculatorTest.isAllDatesUsed" />
-        <item itemvalue="Application.TollFeeCalculator" />
-        <item itemvalue="JUnit.TollFeeCalculatorTest.tollFeePrePassing" />
-        <item itemvalue="JUnit.TollFeeCalculatorTest.passingUnderSameHour" />
+        <item itemvalue="Application.Hangman" />
+        <item itemvalue="JUnit.HangmanTest.nullPointerExceptionTesting" />
+        <item itemvalue="JUnit.HangmanTest.exceptionTesting" />
+        <item itemvalue="JUnit.HangmanTest.readMessageFromSystemErr" />
+        <item itemvalue="JUnit.HangmanTest.DoProgramComplyWithDigits" />
       </list>
     </recent_temporary>
   </component>
@@ -185,6 +184,8 @@
       <workItem from="1603267341730" duration="2591000" />
       <workItem from="1603280432188" duration="6000" />
       <workItem from="1603699005199" duration="2595000" />
+      <workItem from="1603720500801" duration="122000" />
+      <workItem from="1603720962606" duration="11122000" />
     </task>
     <servers />
   </component>
@@ -200,33 +201,41 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="524" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1601970081215" />
+    <state x="350" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603814561207">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="350" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1603814561207" />
+    <state x="526" y="147" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1603804381839">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="526" y="147" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1603804381839" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1603703534303">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1603703534303" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1603267963088">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1603804349332">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603267963088" />
-    <state width="1493" height="215" key="GridCell.Tab.0.bottom" timestamp="1603717698555">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603804349332" />
+    <state width="1493" height="215" key="GridCell.Tab.0.bottom" timestamp="1603814583902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603717698555" />
+    <state width="1493" height="215" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603814583902" />
     <state width="1340" height="138" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600960742073" />
-    <state width="1493" height="215" key="GridCell.Tab.0.center" timestamp="1603717698555">
+    <state width="1493" height="215" key="GridCell.Tab.0.center" timestamp="1603814583902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603717698555" />
+    <state width="1493" height="215" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603814583902" />
     <state width="1340" height="138" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600960742073" />
-    <state width="1493" height="215" key="GridCell.Tab.0.left" timestamp="1603717698554">
+    <state width="1493" height="215" key="GridCell.Tab.0.left" timestamp="1603814583902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603717698554" />
+    <state width="1493" height="215" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603814583902" />
     <state width="1340" height="138" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600960742073" />
-    <state width="1493" height="215" key="GridCell.Tab.0.right" timestamp="1603717698555">
+    <state width="1493" height="215" key="GridCell.Tab.0.right" timestamp="1603814583902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603717698555" />
+    <state width="1493" height="215" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603814583902" />
     <state width="1340" height="138" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600960742073" />
     <state width="1493" height="233" key="GridCell.Tab.1.bottom" timestamp="1602855206365">
       <screen x="0" y="0" width="1536" height="824" />
